@@ -1,59 +1,0 @@
-TRayCaster
-v7
-r0
-t313410566.126935
-cCheck dependencies
-cCompileC build/RayCaster.build/Debug/RayCaster.build/Objects-normal/x86_64/main.o /Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-cLd /Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/Debug/RayCaster normal x86_64
-
-N/Developer/SDKs/MacOSX10.6.sdk
-c000000004BF4701900000000000000EE
-t1274310681
-s238
-
-N/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/Debug/RayCaster
-t1291717766
-s10624
-
-N/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/RayCaster.build/Debug/RayCaster.build/Objects-normal/x86_64/RayCaster.LinkFileList
-c000000004CFE0C84000000000000008A
-t1291717764
-s138
-
-N/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/RayCaster.build/Debug/RayCaster.build/Objects-normal/x86_64/main.o
-t1291717765
-s67032
-
-N/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/main.cpp
-c000000004CFE0734000000000000008F
-t1291716404
-s143
-i<iostream>
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies313410564#313410564#0(0"0(0#1#0"3343187568374212096#0"0#
-
-CCompileC build/RayCaster.build/Debug/RayCaster.build/Objects-normal/x86_64/main.o /Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-s313410564.475745
-e313410565.632040
-r1
-xCompileC
-xbuild/RayCaster.build/Debug/RayCaster.build/Objects-normal/x86_64/main.o
-x/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/main.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@81"Compile /Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/main.cpp313410564#313410565#0(0"0(0#0#73"/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/main.cpp3907004821821025792#1613"    cd /Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/RayCaster.build/Debug/RayCaster.build/RayCaster-generated-files.hmap -I/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/RayCaster.build/Debug/RayCaster.build/RayCaster-own-target-headers.hmap -I/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/RayCaster.build/Debug/RayCaster.build/RayCaster-all-target-headers.hmap -iquote /Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/RayCaster.build/Debug/RayCaster.build/RayCaster-project-headers.hmap -F/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/Debug -I/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/Debug/include -I/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/RayCaster.build/Debug/RayCaster.build/DerivedSources/x86_64 -I/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/RayCaster.build/Debug/RayCaster.build/DerivedSources -c /Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/main.cpp -o /Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/RayCaster.build/Debug/RayCaster.build/Objects-normal/x86_64/main.o0#
-
-CLd /Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/Debug/RayCaster normal x86_64
-s313410565.632155
-e313410566.126806
-r1
-xLd
-x/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/Debug/RayCaster
-xnormal
-xx86_64
-lSLF07#2@91"Link /Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/Debug/RayCaster313410565#313410566#0(0"0(0#0#0"27303424931332200#636"    cd /Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/Debug -F/Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/Debug -filelist /Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/RayCaster.build/Debug/RayCaster.build/Objects-normal/x86_64/RayCaster.LinkFileList -mmacosx-version-min=10.6 -o /Users/fpb/Documents/FCT/Projects/Tomo/VolumeRendering/RayCaster/build/Debug/RayCaster0#
-
