@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8DD76F650486A84900D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76F6A0486A84900D96B5E /* RayCaster.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* RayCaster.1 */; };
+		E02486FC12AE5F0000FDECAF /* volumeRender.cl in Sources */ = {isa = PBXBuildFile; fileRef = E02486FB12AE5F0000FDECAF /* volumeRender.cl */; };
 		E0A4429A12AE49A300EC140D /* oclVolumeRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0A4429912AE49A300EC140D /* oclVolumeRender.cpp */; };
-		E0A442AC12AE4B5600EC140D /* volumeRender.cl in Sources */ = {isa = PBXBuildFile; fileRef = E0A442AB12AE4B5600EC140D /* volumeRender.cl */; };
+		E0A442BC12AE50B900EC140D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A442BB12AE50B900EC140D /* OpenGL.framework */; };
+		E0A442CC12AE542B00EC140D /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A442CB12AE542B00EC140D /* OpenCL.framework */; };
+		E0A442EB12AE569800EC140D /* shrUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0A442EA12AE569800EC140D /* shrUtils.cpp */; };
+		E0A442EF12AE56B100EC140D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A442EE12AE56B100EC140D /* GLUT.framework */; };
+		E0A442F512AE571800EC140D /* oclUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0A442F412AE571800EC140D /* oclUtils.cpp */; };
+		E0A442F912AE575D00EC140D /* cmd_arg_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0A442F812AE575D00EC140D /* cmd_arg_reader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,11 +32,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8DD76F6C0486A84900D96B5E /* RayCaster */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RayCaster; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859E8B029090EE04C91782 /* RayCaster.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RayCaster.1; sourceTree = "<group>"; };
+		E02486FB12AE5F0000FDECAF /* volumeRender.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = volumeRender.cl; sourceTree = "<group>"; };
 		E0A4429912AE49A300EC140D /* oclVolumeRender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oclVolumeRender.cpp; sourceTree = "<group>"; };
-		E0A442AB12AE4B5600EC140D /* volumeRender.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; name = volumeRender.cl; path = clKernels/volumeRender.cl; sourceTree = "<group>"; };
+		E0A442BB12AE50B900EC140D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		E0A442CB12AE542B00EC140D /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		E0A442EA12AE569800EC140D /* shrUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shrUtils.cpp; path = "GPU Computing/shared/src/shrUtils.cpp"; sourceTree = DEVELOPER_DIR; };
+		E0A442EE12AE56B100EC140D /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		E0A442F412AE571800EC140D /* oclUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = oclUtils.cpp; path = "GPU Computing/OpenCL/common/src/oclUtils.cpp"; sourceTree = DEVELOPER_DIR; };
+		E0A442F812AE575D00EC140D /* cmd_arg_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cmd_arg_reader.cpp; path = "GPU Computing/shared/src/cmd_arg_reader.cpp"; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A442BC12AE50B900EC140D /* OpenGL.framework in Frameworks */,
+				E0A442CC12AE542B00EC140D /* OpenCL.framework in Frameworks */,
+				E0A442EF12AE56B100EC140D /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,10 +61,12 @@
 		08FB7794FE84155DC02AAC07 /* RayCaster */ = {
 			isa = PBXGroup;
 			children = (
-				E0A4429C12AE49E300EC140D /* clKernels */,
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6859E8C029090F304C91782 /* Documentation */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
+				E0A442BB12AE50B900EC140D /* OpenGL.framework */,
+				E0A442CB12AE542B00EC140D /* OpenCL.framework */,
+				E0A442EE12AE56B100EC140D /* GLUT.framework */,
 			);
 			name = RayCaster;
 			sourceTree = "<group>";
@@ -59,8 +74,11 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E02486FB12AE5F0000FDECAF /* volumeRender.cl */,
+				E0A442F812AE575D00EC140D /* cmd_arg_reader.cpp */,
+				E0A442F412AE571800EC140D /* oclUtils.cpp */,
+				E0A442EA12AE569800EC140D /* shrUtils.cpp */,
 				E0A4429912AE49A300EC140D /* oclVolumeRender.cpp */,
-				08FB7796FE84155DC02AAC07 /* main.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -79,14 +97,6 @@
 				C6859E8B029090EE04C91782 /* RayCaster.1 */,
 			);
 			name = Documentation;
-			sourceTree = "<group>";
-		};
-		E0A4429C12AE49E300EC140D /* clKernels */ = {
-			isa = PBXGroup;
-			children = (
-				E0A442AB12AE4B5600EC140D /* volumeRender.cl */,
-			);
-			name = clKernels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +142,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD76F650486A84900D96B5E /* main.cpp in Sources */,
 				E0A4429A12AE49A300EC140D /* oclVolumeRender.cpp in Sources */,
-				E0A442AC12AE4B5600EC140D /* volumeRender.cl in Sources */,
+				E0A442EB12AE569800EC140D /* shrUtils.cpp in Sources */,
+				E0A442F512AE571800EC140D /* oclUtils.cpp in Sources */,
+				E0A442F912AE575D00EC140D /* cmd_arg_reader.cpp in Sources */,
+				E02486FC12AE5F0000FDECAF /* volumeRender.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,11 +184,19 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = UNIX;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/Developer/GPU Computing/shared/inc\"",
+					"\"/Developer/GPU Computing/OpenCL/common/inc\"",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/lib;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = /usr/lib/libGLEW.a;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
+				SYMROOT = ../../build;
 			};
 			name = Debug;
 		};
@@ -185,10 +205,18 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = UNIX;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/Developer/GPU Computing/shared/inc\"",
+					"\"/Developer/GPU Computing/OpenCL/common/inc\"",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/lib;
+				OTHER_LDFLAGS = /usr/lib/libGLEW.a;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
+				SYMROOT = ../../build;
 			};
 			name = Release;
 		};
