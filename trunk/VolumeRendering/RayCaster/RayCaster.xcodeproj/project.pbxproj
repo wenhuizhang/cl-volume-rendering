@@ -10,7 +10,7 @@
 		8DD76F650486A84900D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76F6A0486A84900D96B5E /* RayCaster.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* RayCaster.1 */; };
 		E0A4429A12AE49A300EC140D /* oclVolumeRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0A4429912AE49A300EC140D /* oclVolumeRender.cpp */; };
-		E0A4429E12AE49F600EC140D /* volumeRender.cl in Sources */ = {isa = PBXBuildFile; fileRef = E0A4429D12AE49F600EC140D /* volumeRender.cl */; };
+		E0A442AC12AE4B5600EC140D /* volumeRender.cl in Sources */ = {isa = PBXBuildFile; fileRef = E0A442AB12AE4B5600EC140D /* volumeRender.cl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +31,7 @@
 		8DD76F6C0486A84900D96B5E /* RayCaster */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RayCaster; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859E8B029090EE04C91782 /* RayCaster.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RayCaster.1; sourceTree = "<group>"; };
 		E0A4429912AE49A300EC140D /* oclVolumeRender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oclVolumeRender.cpp; sourceTree = "<group>"; };
-		E0A4429D12AE49F600EC140D /* volumeRender.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = volumeRender.cl; sourceTree = "<group>"; };
+		E0A442AB12AE4B5600EC140D /* volumeRender.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; name = volumeRender.cl; path = clKernels/volumeRender.cl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 		E0A4429C12AE49E300EC140D /* clKernels */ = {
 			isa = PBXGroup;
 			children = (
-				E0A4429D12AE49F600EC140D /* volumeRender.cl */,
+				E0A442AB12AE4B5600EC140D /* volumeRender.cl */,
 			);
 			name = clKernels;
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 			files = (
 				8DD76F650486A84900D96B5E /* main.cpp in Sources */,
 				E0A4429A12AE49A300EC140D /* oclVolumeRender.cpp in Sources */,
-				E0A4429E12AE49F600EC140D /* volumeRender.cl in Sources */,
+				E0A442AC12AE4B5600EC140D /* volumeRender.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

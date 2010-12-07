@@ -89,8 +89,8 @@
 	08FB7796FE84155DC02AAC07 /* main.cpp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1061, 324}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 143}";
+			sepNavSelRange = "{11, 0}";
+			sepNavVisRange = "{0, 155}";
 		};
 	};
 	8DD76F620486A84900D96B5E /* RayCaster */ = {
@@ -118,6 +118,13 @@
 		rType = 0;
 		vrLen = 143;
 		vrLoc = 0;
+	};
+	E0A4429912AE49A300EC140D /* oclVolumeRender.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1061, 11167}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 651}";
+		};
 	};
 	E0A517B612AE3EB400191F30 /* RayCaster */ = {
 		isa = PBXExecutable;
