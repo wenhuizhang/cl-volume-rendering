@@ -166,7 +166,7 @@ int main(int argc, char** argv)
 
     // Program Setup
     size_t program_length;
-    cPathAndName = shrFindFilePath("volumeRender.cl", argv[0]);
+    cPathAndName = shrFindFilePath("../../VolumeRendering/RayCaster/volumeRender.cl", argv[0]);
     oclCheckErrorEX(cPathAndName != NULL, shrTRUE, pCleanup);
     cSourceCL = oclLoadProgSource(cPathAndName, "", &program_length);
     oclCheckErrorEX(cSourceCL != NULL, shrTRUE, pCleanup);
